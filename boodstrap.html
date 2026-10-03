@@ -10,21 +10,21 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
     <!-- CABEÇALHO -->
-    <header>
+    <header class="p-5 bg-dark">
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 
             <div class="container-fluid">
 
                 <!-- Nome do site -->
-                <a class="navbar-brand" href="https://www.volkswagen.com.br/" target="_blank">
-                    <strong>Grupo Volkswagen</strong>
+                <nav class="navbar navbar-expand-lg text-light"></nav>
+                <strong class="text-light">Grupo Volkswagen</strong>
                 </a>
 
                 <!-- Botão para celular -->
@@ -37,53 +37,97 @@
                 </button>
 
                 <!-- Menu -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- ================= MENU DO SITE ================= -->
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-                        <!-- Início -->
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="https://www.volkswagen.com.br/"
-                                target="_blank">
-                                Início
-                            </a>
-                        </li>
+                    <div class="container">
 
-                        <!-- Volkswagen -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.volkswagen.com.br/" target="_blank">
-                                Volkswagen
-                            </a>
-                        </li>
+                        <!-- Botão para celular -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                            aria-label="Abrir menu">
 
-                        <!-- Audi -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.audi.com.br/" target="_blank">
-                                Audi
-                            </a>
-                        </li>
+                            <span class="navbar-toggler-icon"></span>
 
-                        <!-- Porsche -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.porsche.com/brazil/pt/" target="_blank">
-                                Porsche
-                            </a>
-                        </li>
-
-                    </ul>
-
-                    <!-- Pesquisa -->
-                    <form class="d-flex" role="search">
-
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-
-                        <button class="btn btn-outline-success" type="submit">
-                            Pesquisar
                         </button>
 
-                    </form>
+                        <!-- Links do menu -->
+                        <div class="collapse navbar-collapse" id="menuPrincipal">
 
-                </div>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <!-- INÍCIO -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">
+                                        Início
+                                    </a>
+                                </li>
+
+                                <!-- SERVIÇOS -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="servicos.html">
+                                        Serviços
+                                    </a>
+                                </li>
+
+                                <!-- QUEM SOMOS -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="quem-somos.html">
+                                        Quem Somos
+                                    </a>
+                                </li>
+
+                                <!-- CONTATO -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contato.html">
+                                        Contato
+                                    </a>
+                                </li>
+
+                                <!-- VOLKSWAGEN -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.volkswagen.com.br/" target="_blank">
+                                        Volkswagen
+                                    </a>
+                                </li>
+
+                                <!-- AUDI -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.audi.com.br/" target="_blank">
+                                        Audi
+                                    </a>
+                                </li>
+
+                                <!-- PORSCHE -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.porsche.com/brazil/pt/" target="_blank">
+                                        Porsche
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+
+                <!-- =============== FIM DO MENU ================= -->
+
+                <!-- Pesquisa -->
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+
+                    <button class="btn btn-outline-success" type="submit">
+                        Pesquisar
+                    </button>
+
+                </form>
+
+            </div>
 
             </div>
 
@@ -102,7 +146,7 @@
                 <!-- Imagem Volkswagen -->
                 <div class="carousel-item active">
 
-                    <img src="golf.jpg" class="d-block w-100" alt="Volkswagen">
+                    <img src="golf.jpg" class="d-block w-100" alt="Volkswagen" style="height:500px; object-fit: cover;">
 
                     <div class="carousel-caption d-none d-md-block">
 
@@ -113,7 +157,8 @@
                             da Volkswagen.
                         </p>
 
-                        <a href="https://www.volkswagen.com.br/" target="_blank" class="btn btn-primary">
+                        <a href="https://www.cnvw.com.br/blog/volkswagen-brasil-conheca-a-trajetoria-dessa-montadora"
+                            target="_blank" class="btn btn-primary">
                             Conhecer Volkswagen
                         </a>
 
@@ -125,7 +170,7 @@
                 <!-- Imagem Audi -->
                 <div class="carousel-item">
 
-                    <img src="rs4.jpg" class="d-block w-100" alt="Audi">
+                    <img src="rs4.jpg" class="d-block w-100" alt="Audi" style="height:500px; object-fit: cover;">
 
                     <div class="carousel-caption d-none d-md-block">
 
@@ -135,7 +180,8 @@
                             Conheça a tecnologia, o design e os modelos da Audi.
                         </p>
 
-                        <a href="https://www.audi.com.br/" target="_blank" class="btn btn-light">
+                        <a href="https://media.audi.com/is/content/audi/country/br/pt/LivroAudidoBrasil25anos.pdf"
+                            target="_blank" class="btn btn-light">
                             Conhecer Audi
                         </a>
 
@@ -147,7 +193,7 @@
                 <!-- Imagem Porsche -->
                 <div class="carousel-item">
 
-                    <img src="gt3.jpg" class="d-block w-100" alt="Porsche">
+                    <img src="gt3.jpg" class="d-block w-100" alt="Porsche" style="height:500px; object-fit: cover;">
 
                     <div class="carousel-caption d-none d-md-block">
 
@@ -157,7 +203,8 @@
                             Conheça a história e os carros esportivos da Porsche.
                         </p>
 
-                        <a href="https://www.porsche.com/brazil/pt/" target="_blank" class="btn btn-danger">
+                        <a href="https://newsroom.porsche.com/en_US/company/porsche-cars-north-america-historical-background-18072.html"
+                            target="_blank" class="btn btn-danger">
                             Conhecer Porsche
                         </a>
 
@@ -199,7 +246,7 @@
 
 
     <!-- TÍTULO -->
-    <section class="text-center p-5">
+    <section class="text-center bg-dark text-light p-5">
 
         <h1>
             Grupo Volkswagen
@@ -214,7 +261,7 @@
 
 
     <!-- CARDS DAS MARCAS -->
-    <section>
+    <section id="marcas" class="bg-dark text-light">
 
         <div class="container">
 
@@ -325,7 +372,7 @@
 
 
     <!-- SEÇÃO INFORMATIVA -->
-    <section class="container-fluid mt-5">
+    <section class="container-fluid bg-dark text-light">
 
         <div class="row">
 
@@ -394,7 +441,7 @@
 
 
     <!-- RODAPÉ -->
-    <footer class="bg-dark text-white text-center p-4 mt-5">
+    <footer class="bg-dark text-white text-center p-4 ">
 
         <div class="row">
 
@@ -529,13 +576,13 @@
             <ul class="list-unstyled d-flex">
 
                 <li class="ms-3">
-    
-                    
+
+
                     <a class="link-body-emphasis" href="https://www.instagram.com/" target="_blank"
                         aria-label="Instagram">
                         <i class="bi bi-instagram text-light"></i>
 
-                       
+
                     </a>
 
                 </li>
